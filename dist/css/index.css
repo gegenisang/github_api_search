@@ -1,0 +1,6 @@
+* {
+  box-sizing: border-box;
+  outline: 1px solid #bbb; }
+
+#box {
+  background-color: #e6f3ff; }
