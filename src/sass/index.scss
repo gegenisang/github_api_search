@@ -33,3 +33,30 @@
     margin-right: 25px;
   }
 }
+
+@media (min-width:768px) {
+  .ui.fluid.dropdown {
+    width: 75%;
+    float: right;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width:768px) {
+  .icon {
+    float: left;
+    position: relative;
+    margin-left: 0px;
+    .fa-github {
+      color: #fff;
+      display: inline-block;
+      font-size: 20px;
+      padding: 5px;
+    }
+  }
+  .ui.fluid.dropdown {
+    max-width: 65%;
+    float: right;
+    margin-right: 5px;
+  }
+}
