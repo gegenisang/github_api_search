@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="bower_components/semantic_ui/dropdown.min.css">
+  <link rel="stylesheet" href="bower_components/semantic_ui/semantic.min.css">
+
 </head>
 
 <body id="box">
@@ -21,23 +22,944 @@
           <a href="javascript" class="icon">
             <i class="fa fa-github" aria-hidden="true"></i>
           </a>
-          <!-- <form class="form-search">
-            <input type="text" placeholder="Search GitHub">
-          </form> -->
-          <div class="ui search dropdown selection">
+
+          <div class="ui search dropdown selection fluid" id="myDropdown">
             <select>
-              <option>Search GitHub</option>
-              <option value="AK">Ababama</option>
-              <option value="AZ">Search GitHub</option>
+              <option value=''>Search GitHub</option>
+              <!-- <optgroup label='Popular'> -->
+              <option value="ActionScript">ActionScript</option>
+              <option value="C">C</option>
+              <option value="C#">C#</option>
+              <option value="C++">C++</option>
+              <option value="Clojure">Clojure</option>
+              <option value="CoffeeScript">CoffeeScript</option>
+              <option value="CSS">CSS</option>
+              <option value="Go">Go</option>
+              <option value="Haskell">Haskell</option>
+              <option value="HTML">HTML</option>
+              <option value="Java">Java</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Lua">Lua</option>
+              <option value="Matlab">Matlab</option>
+              <option value="Objective-C">Objective-C</option>
+              <option value="Perl">Perl</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="R">R</option>
+              <option value="Ruby">Ruby</option>
+              <option value="Scala">Scala</option>
+              <option value="Shell">Shell</option>
+              <option value="Swift">Swift</option>
+              <option value="TeX">TeX</option>
+              <option value="Vim script">Vim script</option>
+              <!-- </optgroup>
+              <optgroup label="Everything else"> -->
+              <option value="1C Enterprise">1C Enterprise</option>
+              <option value="ABAP">ABAP</option>
+              <option value="ABNF">ABNF</option>
+              <option value="Ada">Ada</option>
+              <option value="Adobe Font Metrics">Adobe Font Metrics</option>
+              <option value="Agda">Agda</option>
+              <option value="AGS Script">AGS Script</option>
+              <option value="Alloy">Alloy</option>
+              <option value="Alpine Abuild">Alpine Abuild</option>
+              <option value="AMPL">AMPL</option>
+              <option value="Ant Build System">Ant Build System</option>
+              <option value="ANTLR">ANTLR</option>
+              <option value="ApacheConf">ApacheConf</option>
+              <option value="Apex">Apex</option>
+              <option value="API Blueprint">API Blueprint</option>
+              <option value="APL">APL</option>
+              <option value="Apollo Guidance Computer">Apollo Guidance Computer</option>
+              <option value="AppleScript">AppleScript</option>
+              <option value="Arc">Arc</option>
+              <option value="Arduino">Arduino</option>
+              <option value="AsciiDoc">AsciiDoc</option>
+              <option value="ASN.1">ASN.1</option>
+              <option value="ASP">ASP</option>
+              <option value="AspectJ">AspectJ</option>
+              <option value="Assembly">Assembly</option>
+              <option value="ATS">ATS</option>
+              <option value="Augeas">Augeas</option>
+              <option value="AutoHotkey">AutoHotkey</option>
+              <option value="AutoIt">AutoIt</option>
+              <option value="Awk">Awk</option>
+              <option value="Batchfile">Batchfile</option>
+              <option value="Befunge">Befunge</option>
+              <option value="Bison">Bison</option>
+              <option value="BitBake">BitBake</option>
+              <option value="Blade">Blade</option>
+              <option value="BlitzBasic">BlitzBasic</option>
+              <option value="BlitzMax">BlitzMax</option>
+              <option value="Bluespec">Bluespec</option>
+              <option value="Boo">Boo</option>
+              <option value="Brainfuck">Brainfuck</option>
+              <option value="Brightscript">Brightscript</option>
+              <option value="Bro">Bro</option>
+              <option value="C-ObjDump">C-ObjDump</option>
+              <option value="C2hs Haskell">C2hs Haskell</option>
+              <option value="Cap&#39;n Proto">Cap&#39;n Proto</option>
+              <option value="CartoCSS">CartoCSS</option>
+              <option value="Ceylon">Ceylon</option>
+              <option value="Chapel">Chapel</option>
+              <option value="Charity">Charity</option>
+              <option value="ChucK">ChucK</option>
+              <option value="Cirru">Cirru</option>
+              <option value="Clarion">Clarion</option>
+              <option value="Clean">Clean</option>
+              <option value="Click">Click</option>
+              <option value="CLIPS">CLIPS</option>
+              <option value="Closure Templates">Closure Templates</option>
+              <option value="CMake">CMake</option>
+              <option value="COBOL">COBOL</option>
+              <option value="ColdFusion">ColdFusion</option>
+              <option value="ColdFusion CFC">ColdFusion CFC</option>
+              <option value="COLLADA">COLLADA</option>
+              <option value="Common Lisp">Common Lisp</option>
+              <option value="Component Pascal">Component Pascal</option>
+              <option value="Cool">Cool</option>
+              <option value="Coq">Coq</option>
+              <option value="Cpp-ObjDump">Cpp-ObjDump</option>
+              <option value="Creole">Creole</option>
+              <option value="Crystal">Crystal</option>
+              <option value="CSON">CSON</option>
+              <option value="Csound">Csound</option>
+              <option value="Csound Document">Csound Document</option>
+              <option value="Csound Score">Csound Score</option>
+              <option value="CSV">CSV</option>
+              <option value="Cuda">Cuda</option>
+              <option value="CWeb">CWeb</option>
+              <option value="Cycript">Cycript</option>
+              <option value="Cython">Cython</option>
+              <option value="D">D</option>
+              <option value="D-ObjDump">D-ObjDump</option>
+              <option value="Darcs Patch">Darcs Patch</option>
+              <option value="Dart">Dart</option>
+              <option value="desktop">desktop</option>
+              <option value="Diff">Diff</option>
+              <option value="DIGITAL Command Language">DIGITAL Command Language</option>
+              <option value="DM">DM</option>
+              <option value="DNS Zone">DNS Zone</option>
+              <option value="Dockerfile">Dockerfile</option>
+              <option value="Dogescript">Dogescript</option>
+              <option value="DTrace">DTrace</option>
+              <option value="Dylan">Dylan</option>
+              <option value="E">E</option>
+              <option value="Eagle">Eagle</option>
+              <option value="Easybuild">Easybuild</option>
+              <option value="EBNF">EBNF</option>
+              <option value="eC">eC</option>
+              <option value="Ecere Projects">Ecere Projects</option>
+              <option value="ECL">ECL</option>
+              <option value="ECLiPSe">ECLiPSe</option>
+              <option value="edn">edn</option>
+              <option value="Eiffel">Eiffel</option>
+              <option value="EJS">EJS</option>
+              <option value="Elixir">Elixir</option>
+              <option value="Elm">Elm</option>
+              <option value="Emacs Lisp">Emacs Lisp</option>
+              <option value="EmberScript">EmberScript</option>
+              <option value="EQ">EQ</option>
+              <option value="Erlang">Erlang</option>
+              <option value="F#">F#</option>
+              <option value="Factor">Factor</option>
+              <option value="Fancy">Fancy</option>
+              <option value="Fantom">Fantom</option>
+              <option value="Filebench WML">Filebench WML</option>
+              <option value="Filterscript">Filterscript</option>
+              <option value="fish">fish</option>
+              <option value="FLUX">FLUX</option>
+              <option value="Formatted">Formatted</option>
+              <option value="Forth">Forth</option>
+              <option value="Fortran">Fortran</option>
+              <option value="FreeMarker">FreeMarker</option>
+              <option value="Frege">Frege</option>
+              <option value="G-code">G-code</option>
+              <option value="Game Maker Language">Game Maker Language</option>
+              <option value="GAMS">GAMS</option>
+              <option value="GAP">GAP</option>
+              <option value="GCC Machine Description">GCC Machine Description</option>
+              <option value="GDB">GDB</option>
+              <option value="GDScript">GDScript</option>
+              <option value="Genie">Genie</option>
+              <option value="Genshi">Genshi</option>
+              <option value="Gentoo Ebuild">Gentoo Ebuild</option>
+              <option value="Gentoo Eclass">Gentoo Eclass</option>
+              <option value="Gerber Image">Gerber Image</option>
+              <option value="Gettext Catalog">Gettext Catalog</option>
+              <option value="Gherkin">Gherkin</option>
+              <option value="GLSL">GLSL</option>
+              <option value="Glyph">Glyph</option>
+              <option value="GN">GN</option>
+              <option value="Gnuplot">Gnuplot</option>
+              <option value="Golo">Golo</option>
+              <option value="Gosu">Gosu</option>
+              <option value="Grace">Grace</option>
+              <option value="Gradle">Gradle</option>
+              <option value="Grammatical Framework">Grammatical Framework</option>
+              <option value="Graph Modeling Language">Graph Modeling Language</option>
+              <option value="GraphQL">GraphQL</option>
+              <option value="Graphviz (DOT)">Graphviz (DOT)</option>
+              <option value="Groovy">Groovy</option>
+              <option value="Groovy Server Pages">Groovy Server Pages</option>
+              <option value="Hack">Hack</option>
+              <option value="Haml">Haml</option>
+              <option value="Handlebars">Handlebars</option>
+              <option value="Harbour">Harbour</option>
+              <option value="Haxe">Haxe</option>
+              <option value="HCL">HCL</option>
+              <option value="HLSL">HLSL</option>
+              <option value="HTML+Django">HTML+Django</option>
+              <option value="HTML+ECR">HTML+ECR</option>
+              <option value="HTML+EEX">HTML+EEX</option>
+              <option value="HTML+ERB">HTML+ERB</option>
+              <option value="HTML+PHP">HTML+PHP</option>
+              <option value="HTTP">HTTP</option>
+              <option value="Hy">Hy</option>
+              <option value="HyPhy">HyPhy</option>
+              <option value="IDL">IDL</option>
+              <option value="Idris">Idris</option>
+              <option value="IGOR Pro">IGOR Pro</option>
+              <option value="Inform 7">Inform 7</option>
+              <option value="INI">INI</option>
+              <option value="Inno Setup">Inno Setup</option>
+              <option value="Io">Io</option>
+              <option value="Ioke">Ioke</option>
+              <option value="IRC log">IRC log</option>
+              <option value="Isabelle">Isabelle</option>
+              <option value="Isabelle ROOT">Isabelle ROOT</option>
+              <option value="J">J</option>
+              <option value="Jasmin">Jasmin</option>
+              <option value="Java Server Pages">Java Server Pages</option>
+              <option value="JFlex">JFlex</option>
+              <option value="Jison">Jison</option>
+              <option value="Jison Lex">Jison Lex</option>
+              <option value="Jolie">Jolie</option>
+              <option value="JSON">JSON</option>
+              <option value="JSON5">JSON5</option>
+              <option value="JSONiq">JSONiq</option>
+              <option value="JSONLD">JSONLD</option>
+              <option value="JSX">JSX</option>
+              <option value="Julia">Julia</option>
+              <option value="Jupyter Notebook">Jupyter Notebook</option>
+              <option value="KiCad Board">KiCad Board</option>
+              <option value="KiCad Layout">KiCad Layout</option>
+              <option value="KiCad Schematic">KiCad Schematic</option>
+              <option value="Kit">Kit</option>
+              <option value="Kotlin">Kotlin</option>
+              <option value="KRL">KRL</option>
+              <option value="LabVIEW">LabVIEW</option>
+              <option value="Lasso">Lasso</option>
+              <option value="Latte">Latte</option>
+              <option value="Lean">Lean</option>
+              <option value="Less">Less</option>
+              <option value="Lex">Lex</option>
+              <option value="LFE">LFE</option>
+              <option value="LilyPond">LilyPond</option>
+              <option value="Limbo">Limbo</option>
+              <option value="Linker Script">Linker Script</option>
+              <option value="Linux Kernel Module">Linux Kernel Module</option>
+              <option value="Liquid">Liquid</option>
+              <option value="Literate Agda">Literate Agda</option>
+              <option value="Literate CoffeeScript">Literate CoffeeScript</option>
+              <option value="Literate Haskell">Literate Haskell</option>
+              <option value="LiveScript">LiveScript</option>
+              <option value="LLVM">LLVM</option>
+              <option value="Logos">Logos</option>
+              <option value="Logtalk">Logtalk</option>
+              <option value="LOLCODE">LOLCODE</option>
+              <option value="LookML">LookML</option>
+              <option value="LoomScript">LoomScript</option>
+              <option value="LSL">LSL</option>
+              <option value="M">M</option>
+              <option value="M4">M4</option>
+              <option value="M4Sugar">M4Sugar</option>
+              <option value="Makefile">Makefile</option>
+              <option value="Mako">Mako</option>
+              <option value="Markdown">Markdown</option>
+              <option value="Marko">Marko</option>
+              <option value="Mask">Mask</option>
+              <option value="Mathematica">Mathematica</option>
+              <option value="Maven POM">Maven POM</option>
+              <option value="Max">Max</option>
+              <option value="MAXScript">MAXScript</option>
+              <option value="MediaWiki">MediaWiki</option>
+              <option value="Mercury">Mercury</option>
+              <option value="Meson">Meson</option>
+              <option value="Metal">Metal</option>
+              <option value="MiniD">MiniD</option>
+              <option value="Mirah">Mirah</option>
+              <option value="Modelica">Modelica</option>
+              <option value="Modula-2">Modula-2</option>
+              <option value="Module Management System">Module Management System</option>
+              <option value="Monkey">Monkey</option>
+              <option value="Moocode">Moocode</option>
+              <option value="MoonScript">MoonScript</option>
+              <option value="MQL4">MQL4</option>
+              <option value="MQL5">MQL5</option>
+              <option value="MTML">MTML</option>
+              <option value="MUF">MUF</option>
+              <option value="mupad">mupad</option>
+              <option value="Myghty">Myghty</option>
+              <option value="NCL">NCL</option>
+              <option value="Nemerle">Nemerle</option>
+              <option value="nesC">nesC</option>
+              <option value="NetLinx">NetLinx</option>
+              <option value="NetLinx+ERB">NetLinx+ERB</option>
+              <option value="NetLogo">NetLogo</option>
+              <option value="NewLisp">NewLisp</option>
+              <option value="Nginx">Nginx</option>
+              <option value="Nim">Nim</option>
+              <option value="Ninja">Ninja</option>
+              <option value="Nit">Nit</option>
+              <option value="Nix">Nix</option>
+              <option value="NL">NL</option>
+              <option value="NSIS">NSIS</option>
+              <option value="Nu">Nu</option>
+              <option value="NumPy">NumPy</option>
+              <option value="ObjDump">ObjDump</option>
+              <option value="Objective-C++">Objective-C++</option>
+              <option value="Objective-J">Objective-J</option>
+              <option value="OCaml">OCaml</option>
+              <option value="Omgrofl">Omgrofl</option>
+              <option value="ooc">ooc</option>
+              <option value="Opa">Opa</option>
+              <option value="Opal">Opal</option>
+              <option value="OpenCL">OpenCL</option>
+              <option value="OpenEdge ABL">OpenEdge ABL</option>
+              <option value="OpenRC runscript">OpenRC runscript</option>
+              <option value="OpenSCAD">OpenSCAD</option>
+              <option value="OpenType Feature File">OpenType Feature File</option>
+              <option value="Org">Org</option>
+              <option value="Ox">Ox</option>
+              <option value="Oxygene">Oxygene</option>
+              <option value="Oz">Oz</option>
+              <option value="P4">P4</option>
+              <option value="Pan">Pan</option>
+              <option value="Papyrus">Papyrus</option>
+              <option value="Parrot">Parrot</option>
+              <option value="Parrot Assembly">Parrot Assembly</option>
+              <option value="Parrot Internal Representation">Parrot Internal Representation</option>
+              <option value="Pascal">Pascal</option>
+              <option value="PAWN">PAWN</option>
+              <option value="Pep8">Pep8</option>
+              <option value="Perl 6">Perl 6</option>
+              <option value="Pic">Pic</option>
+              <option value="Pickle">Pickle</option>
+              <option value="PicoLisp">PicoLisp</option>
+              <option value="PigLatin">PigLatin</option>
+              <option value="Pike">Pike</option>
+              <option value="PLpgSQL">PLpgSQL</option>
+              <option value="PLSQL">PLSQL</option>
+              <option value="Pod">Pod</option>
+              <option value="PogoScript">PogoScript</option>
+              <option value="Pony">Pony</option>
+              <option value="PostScript">PostScript</option>
+              <option value="POV-Ray SDL">POV-Ray SDL</option>
+              <option value="PowerBuilder">PowerBuilder</option>
+              <option value="PowerShell">PowerShell</option>
+              <option value="Processing">Processing</option>
+              <option value="Prolog">Prolog</option>
+              <option value="Propeller Spin">Propeller Spin</option>
+              <option value="Protocol Buffer">Protocol Buffer</option>
+              <option value="Public Key">Public Key</option>
+              <option value="Pug">Pug</option>
+              <option value="Puppet">Puppet</option>
+              <option value="Pure Data">Pure Data</option>
+              <option value="PureBasic">PureBasic</option>
+              <option value="PureScript">PureScript</option>
+              <option value="Python console">Python console</option>
+              <option value="Python traceback">Python traceback</option>
+              <option value="QMake">QMake</option>
+              <option value="QML">QML</option>
+              <option value="Racket">Racket</option>
+              <option value="Ragel">Ragel</option>
+              <option value="RAML">RAML</option>
+              <option value="Rascal">Rascal</option>
+              <option value="Raw token data">Raw token data</option>
+              <option value="RDoc">RDoc</option>
+              <option value="REALbasic">REALbasic</option>
+              <option value="Reason">Reason</option>
+              <option value="Rebol">Rebol</option>
+              <option value="Red">Red</option>
+              <option value="Redcode">Redcode</option>
+              <option value="Regular Expression">Regular Expression</option>
+              <option value="Ren&#39;Py">Ren&#39;Py</option>
+              <option value="RenderScript">RenderScript</option>
+              <option value="reStructuredText">reStructuredText</option>
+              <option value="REXX">REXX</option>
+              <option value="RHTML">RHTML</option>
+              <option value="Ring">Ring</option>
+              <option value="RMarkdown">RMarkdown</option>
+              <option value="RobotFramework">RobotFramework</option>
+              <option value="Roff">Roff</option>
+              <option value="Rouge">Rouge</option>
+              <option value="RPM Spec">RPM Spec</option>
+              <option value="RUNOFF">RUNOFF</option>
+              <option value="Rust">Rust</option>
+              <option value="Sage">Sage</option>
+              <option value="SaltStack">SaltStack</option>
+              <option value="SAS">SAS</option>
+              <option value="Sass">Sass</option>
+              <option value="Scaml">Scaml</option>
+              <option value="Scheme">Scheme</option>
+              <option value="Scilab">Scilab</option>
+              <option value="SCSS">SCSS</option>
+              <option value="Self">Self</option>
+              <option value="ShaderLab">ShaderLab</option>
+              <option value="ShellSession">ShellSession</option>
+              <option value="Shen">Shen</option>
+              <option value="Slash">Slash</option>
+              <option value="Slim">Slim</option>
+              <option value="Smali">Smali</option>
+              <option value="Smalltalk">Smalltalk</option>
+              <option value="Smarty">Smarty</option>
+              <option value="SMT">SMT</option>
+              <option value="SourcePawn">SourcePawn</option>
+              <option value="SPARQL">SPARQL</option>
+              <option value="Spline Font Database">Spline Font Database</option>
+              <option value="SQF">SQF</option>
+              <option value="SQL">SQL</option>
+              <option value="SQLPL">SQLPL</option>
+              <option value="Squirrel">Squirrel</option>
+              <option value="SRecode Template">SRecode Template</option>
+              <option value="Stan">Stan</option>
+              <option value="Standard ML">Standard ML</option>
+              <option value="Stata">Stata</option>
+              <option value="STON">STON</option>
+              <option value="Stylus">Stylus</option>
+              <option value="Sublime Text Config">Sublime Text Config</option>
+              <option value="SubRip Text">SubRip Text</option>
+              <option value="SuperCollider">SuperCollider</option>
+              <option value="SVG">SVG</option>
+              <option value="SystemVerilog">SystemVerilog</option>
+              <option value="Tcl">Tcl</option>
+              <option value="Tcsh">Tcsh</option>
+              <option value="Tea">Tea</option>
+              <option value="Terra">Terra</option>
+              <option value="Text">Text</option>
+              <option value="Textile">Textile</option>
+              <option value="Thrift">Thrift</option>
+              <option value="TI Program">TI Program</option>
+              <option value="TLA">TLA</option>
+              <option value="TOML">TOML</option>
+              <option value="Turing">Turing</option>
+              <option value="Turtle">Turtle</option>
+              <option value="Twig">Twig</option>
+              <option value="TXL">TXL</option>
+              <option value="Type Language">Type Language</option>
+              <option value="TypeScript">TypeScript</option>
+              <option value="Unified Parallel C">Unified Parallel C</option>
+              <option value="Unity3D Asset">Unity3D Asset</option>
+              <option value="Unix Assembly">Unix Assembly</option>
+              <option value="Uno">Uno</option>
+              <option value="UnrealScript">UnrealScript</option>
+              <option value="UrWeb">UrWeb</option>
+              <option value="Vala">Vala</option>
+              <option value="VCL">VCL</option>
+              <option value="Verilog">Verilog</option>
+              <option value="VHDL">VHDL</option>
+              <option value="Visual Basic">Visual Basic</option>
+              <option value="Volt">Volt</option>
+              <option value="Vue">Vue</option>
+              <option value="Wavefront Material">Wavefront Material</option>
+              <option value="Wavefront Object">Wavefront Object</option>
+              <option value="Web Ontology Language">Web Ontology Language</option>
+              <option value="WebAssembly">WebAssembly</option>
+              <option value="WebIDL">WebIDL</option>
+              <option value="wisp">wisp</option>
+              <option value="World of Warcraft Addon Data">World of Warcraft Addon Data</option>
+              <option value="X10">X10</option>
+              <option value="xBase">xBase</option>
+              <option value="XC">XC</option>
+              <option value="XCompose">XCompose</option>
+              <option value="XML">XML</option>
+              <option value="Xojo">Xojo</option>
+              <option value="XPages">XPages</option>
+              <option value="XPM">XPM</option>
+              <option value="XProc">XProc</option>
+              <option value="XQuery">XQuery</option>
+              <option value="XS">XS</option>
+              <option value="XSLT">XSLT</option>
+              <option value="Xtend">Xtend</option>
+              <option value="Yacc">Yacc</option>
+              <option value="YAML">YAML</option>
+              <option value="YANG">YANG</option>
+              <option value="Zephir">Zephir</option>
+              <option value="Zimpl">Zimpl</option>
+              <!-- </optgroup> -->
             </select>
             <i class="dropdown icon"></i>
             <input class="search" autocomplete="off" tabindex="0">
             <div class="text">Search GitHub</div>
             <div class="menu transition hidden" tabindex="-1">
-              <div class="item active selected" data-value="AK">Ababama</div>
-              <div class="item" data-value="AZ">Search GitHub</div>
+              <!-- <div class="item active selected" data-value="AL">Ababama</div>
+              <div class="item" data-value="AZ">reree</div> -->
+              <!-- <optgroup label='Popular'> -->
+              <div class="item active selected" data-value="ActionScript">ActionScript</div>
+              <div class="item" data-value="C">C</div>
+              <div class="item" data-value="C#">C#</div>
+              <div class="item" data-value="C++">C++</div>
+              <div class="item" data-value="Clojure">Clojure</div>
+              <div class="item" data-value="CoffeeScript">CoffeeScript</div>
+              <div class="item" data-value="CSS">CSS</div>
+              <div class="item" data-value="Go">Go</div>
+              <div class="item" data-value="Haskell">Haskell</div>
+              <div class="item" data-value="HTML">HTML</div>
+              <div class="item" data-value="Java">Java</div>
+              <div class="item" data-value="JavaScript">JavaScript</div>
+              <div class="item" data-value="Lua">Lua</div>
+              <div class="item" data-value="Matlab">Matlab</div>
+              <div class="item" data-value="Objective-C">Objective-C</div>
+              <div class="item" data-value="Perl">Perl</div>
+              <div class="item" data-value="PHP">PHP</div>
+              <div class="item" data-value="Python">Python</div>
+              <div class="item" data-value="R">R</div>
+              <div class="item" data-value="Ruby">Ruby</div>
+              <div class="item" data-value="Scala">Scala</div>
+              <div class="item" data-value="Shell">Shell</div>
+              <div class="item" data-value="Swift">Swift</div>
+              <div class="item" data-value="TeX">TeX</div>
+              <div class="item" data-value="Vim script">Vim script</div>
+              <!-- </optgroup>
+              <optgroup label="Everything else"> -->
+              <div class="item" data-value="1C Enterprise">1C Enterprise</div>
+              <div class="item" data-value="ABAP">ABAP</div>
+              <div class="item" data-value="ABNF">ABNF</div>
+              <div class="item" data-value="Ada">Ada</div>
+              <div class="item" data-value="Adobe Font Metrics">Adobe Font Metrics</div>
+              <div class="item" data-value="Agda">Agda</div>
+              <div class="item" data-value="AGS Script">AGS Script</div>
+              <div class="item" data-value="Alloy">Alloy</div>
+              <div class="item" data-value="Alpine Abuild">Alpine Abuild</div>
+              <div class="item" data-value="AMPL">AMPL</div>
+              <div class="item" data-value="Ant Build System">Ant Build System</div>
+              <div class="item" data-value="ANTLR">ANTLR</div>
+              <div class="item" data-value="ApacheConf">ApacheConf</div>
+              <div class="item" data-value="Apex">Apex</div>
+              <div class="item" data-value="API Blueprint">API Blueprint</div>
+              <div class="item" data-value="APL">APL</div>
+              <div class="item" data-value="Apollo Guidance Computer">Apollo Guidance Computer</div>
+              <div class="item" data-value="AppleScript">AppleScript</div>
+              <div class="item" data-value="Arc">Arc</div>
+              <div class="item" data-value="Arduino">Arduino</div>
+              <div class="item" data-value="AsciiDoc">AsciiDoc</div>
+              <div class="item" data-value="ASN.1">ASN.1</div>
+              <div class="item" data-value="ASP">ASP</div>
+              <div class="item" data-value="AspectJ">AspectJ</div>
+              <div class="item" data-value="Assembly">Assembly</div>
+              <div class="item" data-value="ATS">ATS</div>
+              <div class="item" data-value="Augeas">Augeas</div>
+              <div class="item" data-value="AutoHotkey">AutoHotkey</div>
+              <div class="item" data-value="AutoIt">AutoIt</div>
+              <div class="item" data-value="Awk">Awk</div>
+              <div class="item" data-value="Batchfile">Batchfile</div>
+              <div class="item" data-value="Befunge">Befunge</div>
+              <div class="item" data-value="Bison">Bison</div>
+              <div class="item" data-value="BitBake">BitBake</div>
+              <div class="item" data-value="Blade">Blade</div>
+              <div class="item" data-value="BlitzBasic">BlitzBasic</div>
+              <div class="item" data-value="BlitzMax">BlitzMax</div>
+              <div class="item" data-value="Bluespec">Bluespec</div>
+              <div class="item" data-value="Boo">Boo</div>
+              <div class="item" data-value="Brainfuck">Brainfuck</div>
+              <div class="item" data-value="Brightscript">Brightscript</div>
+              <div class="item" data-value="Bro">Bro</div>
+              <div class="item" data-value="C-ObjDump">C-ObjDump</div>
+              <div class="item" data-value="C2hs Haskell">C2hs Haskell</div>
+              <div class="item" data-value="Cap&#39;n Proto">Cap&#39;n Proto</div>
+              <div class="item" data-value="CartoCSS">CartoCSS</div>
+              <div class="item" data-value="Ceylon">Ceylon</div>
+              <div class="item" data-value="Chapel">Chapel</div>
+              <div class="item" data-value="Charity">Charity</div>
+              <div class="item" data-value="ChucK">ChucK</div>
+              <div class="item" data-value="Cirru">Cirru</div>
+              <div class="item" data-value="Clarion">Clarion</div>
+              <div class="item" data-value="Clean">Clean</div>
+              <div class="item" data-value="Click">Click</div>
+              <div class="item" data-value="CLIPS">CLIPS</div>
+              <div class="item" data-value="Closure Templates">Closure Templates</div>
+              <div class="item" data-value="CMake">CMake</div>
+              <div class="item" data-value="COBOL">COBOL</div>
+              <div class="item" data-value="ColdFusion">ColdFusion</div>
+              <div class="item" data-value="ColdFusion CFC">ColdFusion CFC</div>
+              <div class="item" data-value="COLLADA">COLLADA</div>
+              <div class="item" data-value="Common Lisp">Common Lisp</div>
+              <div class="item" data-value="Component Pascal">Component Pascal</div>
+              <div class="item" data-value="Cool">Cool</div>
+              <div class="item" data-value="Coq">Coq</div>
+              <div class="item" data-value="Cpp-ObjDump">Cpp-ObjDump</div>
+              <div class="item" data-value="Creole">Creole</div>
+              <div class="item" data-value="Crystal">Crystal</div>
+              <div class="item" data-value="CSON">CSON</div>
+              <div class="item" data-value="Csound">Csound</div>
+              <div class="item" data-value="Csound Document">Csound Document</div>
+              <div class="item" data-value="Csound Score">Csound Score</div>
+              <div class="item" data-value="CSV">CSV</div>
+              <div class="item" data-value="Cuda">Cuda</div>
+              <div class="item" data-value="CWeb">CWeb</div>
+              <div class="item" data-value="Cycript">Cycript</div>
+              <div class="item" data-value="Cython">Cython</div>
+              <div class="item" data-value="D">D</div>
+              <div class="item" data-value="D-ObjDump">D-ObjDump</div>
+              <div class="item" data-value="Darcs Patch">Darcs Patch</div>
+              <div class="item" data-value="Dart">Dart</div>
+              <div class="item" data-value="desktop">desktop</div>
+              <div class="item" data-value="Diff">Diff</div>
+              <div class="item" data-value="DIGITAL Command Language">DIGITAL Command Language</div>
+              <div class="item" data-value="DM">DM</div>
+              <div class="item" data-value="DNS Zone">DNS Zone</div>
+              <div class="item" data-value="Dockerfile">Dockerfile</div>
+              <div class="item" data-value="Dogescript">Dogescript</div>
+              <div class="item" data-value="DTrace">DTrace</div>
+              <div class="item" data-value="Dylan">Dylan</div>
+              <div class="item" data-value="E">E</div>
+              <div class="item" data-value="Eagle">Eagle</div>
+              <div class="item" data-value="Easybuild">Easybuild</div>
+              <div class="item" data-value="EBNF">EBNF</div>
+              <div class="item" data-value="eC">eC</div>
+              <div class="item" data-value="Ecere Projects">Ecere Projects</div>
+              <div class="item" data-value="ECL">ECL</div>
+              <div class="item" data-value="ECLiPSe">ECLiPSe</div>
+              <div class="item" data-value="edn">edn</div>
+              <div class="item" data-value="Eiffel">Eiffel</div>
+              <div class="item" data-value="EJS">EJS</div>
+              <div class="item" data-value="Elixir">Elixir</div>
+              <div class="item" data-value="Elm">Elm</div>
+              <div class="item" data-value="Emacs Lisp">Emacs Lisp</div>
+              <div class="item" data-value="EmberScript">EmberScript</div>
+              <div class="item" data-value="EQ">EQ</div>
+              <div class="item" data-value="Erlang">Erlang</div>
+              <div class="item" data-value="F#">F#</div>
+              <div class="item" data-value="Factor">Factor</div>
+              <div class="item" data-value="Fancy">Fancy</div>
+              <div class="item" data-value="Fantom">Fantom</div>
+              <div class="item" data-value="Filebench WML">Filebench WML</div>
+              <div class="item" data-value="Filterscript">Filterscript</div>
+              <div class="item" data-value="fish">fish</div>
+              <div class="item" data-value="FLUX">FLUX</div>
+              <div class="item" data-value="Formatted">Formatted</div>
+              <div class="item" data-value="Forth">Forth</div>
+              <div class="item" data-value="Fortran">Fortran</div>
+              <div class="item" data-value="FreeMarker">FreeMarker</div>
+              <div class="item" data-value="Frege">Frege</div>
+              <div class="item" data-value="G-code">G-code</div>
+              <div class="item" data-value="Game Maker Language">Game Maker Language</div>
+              <div class="item" data-value="GAMS">GAMS</div>
+              <div class="item" data-value="GAP">GAP</div>
+              <div class="item" data-value="GCC Machine Description">GCC Machine Description</div>
+              <div class="item" data-value="GDB">GDB</div>
+              <div class="item" data-value="GDScript">GDScript</div>
+              <div class="item" data-value="Genie">Genie</div>
+              <div class="item" data-value="Genshi">Genshi</div>
+              <div class="item" data-value="Gentoo Ebuild">Gentoo Ebuild</div>
+              <div class="item" data-value="Gentoo Eclass">Gentoo Eclass</div>
+              <div class="item" data-value="Gerber Image">Gerber Image</div>
+              <div class="item" data-value="Gettext Catalog">Gettext Catalog</div>
+              <div class="item" data-value="Gherkin">Gherkin</div>
+              <div class="item" data-value="GLSL">GLSL</div>
+              <div class="item" data-value="Glyph">Glyph</div>
+              <div class="item" data-value="GN">GN</div>
+              <div class="item" data-value="Gnuplot">Gnuplot</div>
+              <div class="item" data-value="Golo">Golo</div>
+              <div class="item" data-value="Gosu">Gosu</div>
+              <div class="item" data-value="Grace">Grace</div>
+              <div class="item" data-value="Gradle">Gradle</div>
+              <div class="item" data-value="Grammatical Framework">Grammatical Framework</div>
+              <div class="item" data-value="Graph Modeling Language">Graph Modeling Language</div>
+              <div class="item" data-value="GraphQL">GraphQL</div>
+              <div class="item" data-value="Graphviz (DOT)">Graphviz (DOT)</div>
+              <div class="item" data-value="Groovy">Groovy</div>
+              <div class="item" data-value="Groovy Server Pages">Groovy Server Pages</div>
+              <div class="item" data-value="Hack">Hack</div>
+              <div class="item" data-value="Haml">Haml</div>
+              <div class="item" data-value="Handlebars">Handlebars</div>
+              <div class="item" data-value="Harbour">Harbour</div>
+              <div class="item" data-value="Haxe">Haxe</div>
+              <div class="item" data-value="HCL">HCL</div>
+              <div class="item" data-value="HLSL">HLSL</div>
+              <div class="item" data-value="HTML+Django">HTML+Django</div>
+              <div class="item" data-value="HTML+ECR">HTML+ECR</div>
+              <div class="item" data-value="HTML+EEX">HTML+EEX</div>
+              <div class="item" data-value="HTML+ERB">HTML+ERB</div>
+              <div class="item" data-value="HTML+PHP">HTML+PHP</div>
+              <div class="item" data-value="HTTP">HTTP</div>
+              <div class="item" data-value="Hy">Hy</div>
+              <div class="item" data-value="HyPhy">HyPhy</div>
+              <div class="item" data-value="IDL">IDL</div>
+              <div class="item" data-value="Idris">Idris</div>
+              <div class="item" data-value="IGOR Pro">IGOR Pro</div>
+              <div class="item" data-value="Inform 7">Inform 7</div>
+              <div class="item" data-value="INI">INI</div>
+              <div class="item" data-value="Inno Setup">Inno Setup</div>
+              <div class="item" data-value="Io">Io</div>
+              <div class="item" data-value="Ioke">Ioke</div>
+              <div class="item" data-value="IRC log">IRC log</div>
+              <div class="item" data-value="Isabelle">Isabelle</div>
+              <div class="item" data-value="Isabelle ROOT">Isabelle ROOT</div>
+              <div class="item" data-value="J">J</div>
+              <div class="item" data-value="Jasmin">Jasmin</div>
+              <div class="item" data-value="Java Server Pages">Java Server Pages</div>
+              <div class="item" data-value="JFlex">JFlex</div>
+              <div class="item" data-value="Jison">Jison</div>
+              <div class="item" data-value="Jison Lex">Jison Lex</div>
+              <div class="item" data-value="Jolie">Jolie</div>
+              <div class="item" data-value="JSON">JSON</div>
+              <div class="item" data-value="JSON5">JSON5</div>
+              <div class="item" data-value="JSONiq">JSONiq</div>
+              <div class="item" data-value="JSONLD">JSONLD</div>
+              <div class="item" data-value="JSX">JSX</div>
+              <div class="item" data-value="Julia">Julia</div>
+              <div class="item" data-value="Jupyter Notebook">Jupyter Notebook</div>
+              <div class="item" data-value="KiCad Board">KiCad Board</div>
+              <div class="item" data-value="KiCad Layout">KiCad Layout</div>
+              <div class="item" data-value="KiCad Schematic">KiCad Schematic</div>
+              <div class="item" data-value="Kit">Kit</div>
+              <div class="item" data-value="Kotlin">Kotlin</div>
+              <div class="item" data-value="KRL">KRL</div>
+              <div class="item" data-value="LabVIEW">LabVIEW</div>
+              <div class="item" data-value="Lasso">Lasso</div>
+              <div class="item" data-value="Latte">Latte</div>
+              <div class="item" data-value="Lean">Lean</div>
+              <div class="item" data-value="Less">Less</div>
+              <div class="item" data-value="Lex">Lex</div>
+              <div class="item" data-value="LFE">LFE</div>
+              <div class="item" data-value="LilyPond">LilyPond</div>
+              <div class="item" data-value="Limbo">Limbo</div>
+              <div class="item" data-value="Linker Script">Linker Script</div>
+              <div class="item" data-value="Linux Kernel Module">Linux Kernel Module</div>
+              <div class="item" data-value="Liquid">Liquid</div>
+              <div class="item" data-value="Literate Agda">Literate Agda</div>
+              <div class="item" data-value="Literate CoffeeScript">Literate CoffeeScript</div>
+              <div class="item" data-value="Literate Haskell">Literate Haskell</div>
+              <div class="item" data-value="LiveScript">LiveScript</div>
+              <div class="item" data-value="LLVM">LLVM</div>
+              <div class="item" data-value="Logos">Logos</div>
+              <div class="item" data-value="Logtalk">Logtalk</div>
+              <div class="item" data-value="LOLCODE">LOLCODE</div>
+              <div class="item" data-value="LookML">LookML</div>
+              <div class="item" data-value="LoomScript">LoomScript</div>
+              <div class="item" data-value="LSL">LSL</div>
+              <div class="item" data-value="M">M</div>
+              <div class="item" data-value="M4">M4</div>
+              <div class="item" data-value="M4Sugar">M4Sugar</div>
+              <div class="item" data-value="Makefile">Makefile</div>
+              <div class="item" data-value="Mako">Mako</div>
+              <div class="item" data-value="Markdown">Markdown</div>
+              <div class="item" data-value="Marko">Marko</div>
+              <div class="item" data-value="Mask">Mask</div>
+              <div class="item" data-value="Mathematica">Mathematica</div>
+              <div class="item" data-value="Maven POM">Maven POM</div>
+              <div class="item" data-value="Max">Max</div>
+              <div class="item" data-value="MAXScript">MAXScript</div>
+              <div class="item" data-value="MediaWiki">MediaWiki</div>
+              <div class="item" data-value="Mercury">Mercury</div>
+              <div class="item" data-value="Meson">Meson</div>
+              <div class="item" data-value="Metal">Metal</div>
+              <div class="item" data-value="MiniD">MiniD</div>
+              <div class="item" data-value="Mirah">Mirah</div>
+              <div class="item" data-value="Modelica">Modelica</div>
+              <div class="item" data-value="Modula-2">Modula-2</div>
+              <div class="item" data-value="Module Management System">Module Management System</div>
+              <div class="item" data-value="Monkey">Monkey</div>
+              <div class="item" data-value="Moocode">Moocode</div>
+              <div class="item" data-value="MoonScript">MoonScript</div>
+              <div class="item" data-value="MQL4">MQL4</div>
+              <div class="item" data-value="MQL5">MQL5</div>
+              <div class="item" data-value="MTML">MTML</div>
+              <div class="item" data-value="MUF">MUF</div>
+              <div class="item" data-value="mupad">mupad</div>
+              <div class="item" data-value="Myghty">Myghty</div>
+              <div class="item" data-value="NCL">NCL</div>
+              <div class="item" data-value="Nemerle">Nemerle</div>
+              <div class="item" data-value="nesC">nesC</div>
+              <div class="item" data-value="NetLinx">NetLinx</div>
+              <div class="item" data-value="NetLinx+ERB">NetLinx+ERB</div>
+              <div class="item" data-value="NetLogo">NetLogo</div>
+              <div class="item" data-value="NewLisp">NewLisp</div>
+              <div class="item" data-value="Nginx">Nginx</div>
+              <div class="item" data-value="Nim">Nim</div>
+              <div class="item" data-value="Ninja">Ninja</div>
+              <div class="item" data-value="Nit">Nit</div>
+              <div class="item" data-value="Nix">Nix</div>
+              <div class="item" data-value="NL">NL</div>
+              <div class="item" data-value="NSIS">NSIS</div>
+              <div class="item" data-value="Nu">Nu</div>
+              <div class="item" data-value="NumPy">NumPy</div>
+              <div class="item" data-value="ObjDump">ObjDump</div>
+              <div class="item" data-value="Objective-C++">Objective-C++</div>
+              <div class="item" data-value="Objective-J">Objective-J</div>
+              <div class="item" data-value="OCaml">OCaml</div>
+              <div class="item" data-value="Omgrofl">Omgrofl</div>
+              <div class="item" data-value="ooc">ooc</div>
+              <div class="item" data-value="Opa">Opa</div>
+              <div class="item" data-value="Opal">Opal</div>
+              <div class="item" data-value="OpenCL">OpenCL</div>
+              <div class="item" data-value="OpenEdge ABL">OpenEdge ABL</div>
+              <div class="item" data-value="OpenRC runscript">OpenRC runscript</div>
+              <div class="item" data-value="OpenSCAD">OpenSCAD</div>
+              <div class="item" data-value="OpenType Feature File">OpenType Feature File</div>
+              <div class="item" data-value="Org">Org</div>
+              <div class="item" data-value="Ox">Ox</div>
+              <div class="item" data-value="Oxygene">Oxygene</div>
+              <div class="item" data-value="Oz">Oz</div>
+              <div class="item" data-value="P4">P4</div>
+              <div class="item" data-value="Pan">Pan</div>
+              <div class="item" data-value="Papyrus">Papyrus</div>
+              <div class="item" data-value="Parrot">Parrot</div>
+              <div class="item" data-value="Parrot Assembly">Parrot Assembly</div>
+              <div class="item" data-value="Parrot Internal Representation">Parrot Internal Representation</div>
+              <div class="item" data-value="Pascal">Pascal</div>
+              <div class="item" data-value="PAWN">PAWN</div>
+              <div class="item" data-value="Pep8">Pep8</div>
+              <div class="item" data-value="Perl 6">Perl 6</div>
+              <div class="item" data-value="Pic">Pic</div>
+              <div class="item" data-value="Pickle">Pickle</div>
+              <div class="item" data-value="PicoLisp">PicoLisp</div>
+              <div class="item" data-value="PigLatin">PigLatin</div>
+              <div class="item" data-value="Pike">Pike</div>
+              <div class="item" data-value="PLpgSQL">PLpgSQL</div>
+              <div class="item" data-value="PLSQL">PLSQL</div>
+              <div class="item" data-value="Pod">Pod</div>
+              <div class="item" data-value="PogoScript">PogoScript</div>
+              <div class="item" data-value="Pony">Pony</div>
+              <div class="item" data-value="PostScript">PostScript</div>
+              <div class="item" data-value="POV-Ray SDL">POV-Ray SDL</div>
+              <div class="item" data-value="PowerBuilder">PowerBuilder</div>
+              <div class="item" data-value="PowerShell">PowerShell</div>
+              <div class="item" data-value="Processing">Processing</div>
+              <div class="item" data-value="Prolog">Prolog</div>
+              <div class="item" data-value="Propeller Spin">Propeller Spin</div>
+              <div class="item" data-value="Protocol Buffer">Protocol Buffer</div>
+              <div class="item" data-value="Public Key">Public Key</div>
+              <div class="item" data-value="Pug">Pug</div>
+              <div class="item" data-value="Puppet">Puppet</div>
+              <div class="item" data-value="Pure Data">Pure Data</div>
+              <div class="item" data-value="PureBasic">PureBasic</div>
+              <div class="item" data-value="PureScript">PureScript</div>
+              <div class="item" data-value="Python console">Python console</div>
+              <div class="item" data-value="Python traceback">Python traceback</div>
+              <div class="item" data-value="QMake">QMake</div>
+              <div class="item" data-value="QML">QML</div>
+              <div class="item" data-value="Racket">Racket</div>
+              <div class="item" data-value="Ragel">Ragel</div>
+              <div class="item" data-value="RAML">RAML</div>
+              <div class="item" data-value="Rascal">Rascal</div>
+              <div class="item" data-value="Raw token data">Raw token data</div>
+              <div class="item" data-value="RDoc">RDoc</div>
+              <div class="item" data-value="REALbasic">REALbasic</div>
+              <div class="item" data-value="Reason">Reason</div>
+              <div class="item" data-value="Rebol">Rebol</div>
+              <div class="item" data-value="Red">Red</div>
+              <div class="item" data-value="Redcode">Redcode</div>
+              <div class="item" data-value="Regular Expression">Regular Expression</div>
+              <div class="item" data-value="Ren&#39;Py">Ren&#39;Py</div>
+              <div class="item" data-value="RenderScript">RenderScript</div>
+              <div class="item" data-value="reStructuredText">reStructuredText</div>
+              <div class="item" data-value="REXX">REXX</div>
+              <div class="item" data-value="RHTML">RHTML</div>
+              <div class="item" data-value="Ring">Ring</div>
+              <div class="item" data-value="RMarkdown">RMarkdown</div>
+              <div class="item" data-value="RobotFramework">RobotFramework</div>
+              <div class="item" data-value="Roff">Roff</div>
+              <div class="item" data-value="Rouge">Rouge</div>
+              <div class="item" data-value="RPM Spec">RPM Spec</div>
+              <div class="item" data-value="RUNOFF">RUNOFF</div>
+              <div class="item" data-value="Rust">Rust</div>
+              <div class="item" data-value="Sage">Sage</div>
+              <div class="item" data-value="SaltStack">SaltStack</div>
+              <div class="item" data-value="SAS">SAS</div>
+              <div class="item" data-value="Sass">Sass</div>
+              <div class="item" data-value="Scaml">Scaml</div>
+              <div class="item" data-value="Scheme">Scheme</div>
+              <div class="item" data-value="Scilab">Scilab</div>
+              <div class="item" data-value="SCSS">SCSS</div>
+              <div class="item" data-value="Self">Self</div>
+              <div class="item" data-value="ShaderLab">ShaderLab</div>
+              <div class="item" data-value="ShellSession">ShellSession</div>
+              <div class="item" data-value="Shen">Shen</div>
+              <div class="item" data-value="Slash">Slash</div>
+              <div class="item" data-value="Slim">Slim</div>
+              <div class="item" data-value="Smali">Smali</div>
+              <div class="item" data-value="Smalltalk">Smalltalk</div>
+              <div class="item" data-value="Smarty">Smarty</div>
+              <div class="item" data-value="SMT">SMT</div>
+              <div class="item" data-value="SourcePawn">SourcePawn</div>
+              <div class="item" data-value="SPARQL">SPARQL</div>
+              <div class="item" data-value="Spline Font Database">Spline Font Database</div>
+              <div class="item" data-value="SQF">SQF</div>
+              <div class="item" data-value="SQL">SQL</div>
+              <div class="item" data-value="SQLPL">SQLPL</div>
+              <div class="item" data-value="Squirrel">Squirrel</div>
+              <div class="item" data-value="SRecode Template">SRecode Template</div>
+              <div class="item" data-value="Stan">Stan</div>
+              <div class="item" data-value="Standard ML">Standard ML</div>
+              <div class="item" data-value="Stata">Stata</div>
+              <div class="item" data-value="STON">STON</div>
+              <div class="item" data-value="Stylus">Stylus</div>
+              <div class="item" data-value="Sublime Text Config">Sublime Text Config</div>
+              <div class="item" data-value="SubRip Text">SubRip Text</div>
+              <div class="item" data-value="SuperCollider">SuperCollider</div>
+              <div class="item" data-value="SVG">SVG</div>
+              <div class="item" data-value="SystemVerilog">SystemVerilog</div>
+              <div class="item" data-value="Tcl">Tcl</div>
+              <div class="item" data-value="Tcsh">Tcsh</div>
+              <div class="item" data-value="Tea">Tea</div>
+              <div class="item" data-value="Terra">Terra</div>
+              <div class="item" data-value="Text">Text</div>
+              <div class="item" data-value="Textile">Textile</div>
+              <div class="item" data-value="Thrift">Thrift</div>
+              <div class="item" data-value="TI Program">TI Program</div>
+              <div class="item" data-value="TLA">TLA</div>
+              <div class="item" data-value="TOML">TOML</div>
+              <div class="item" data-value="Turing">Turing</div>
+              <div class="item" data-value="Turtle">Turtle</div>
+              <div class="item" data-value="Twig">Twig</div>
+              <div class="item" data-value="TXL">TXL</div>
+              <div class="item" data-value="Type Language">Type Language</div>
+              <div class="item" data-value="TypeScript">TypeScript</div>
+              <div class="item" data-value="Unified Parallel C">Unified Parallel C</div>
+              <div class="item" data-value="Unity3D Asset">Unity3D Asset</div>
+              <div class="item" data-value="Unix Assembly">Unix Assembly</div>
+              <div class="item" data-value="Uno">Uno</div>
+              <div class="item" data-value="UnrealScript">UnrealScript</div>
+              <div class="item" data-value="UrWeb">UrWeb</div>
+              <div class="item" data-value="Vala">Vala</div>
+              <div class="item" data-value="VCL">VCL</div>
+              <div class="item" data-value="Verilog">Verilog</div>
+              <div class="item" data-value="VHDL">VHDL</div>
+              <div class="item" data-value="Visual Basic">Visual Basic</div>
+              <div class="item" data-value="Volt">Volt</div>
+              <div class="item" data-value="Vue">Vue</div>
+              <div class="item" data-value="Wavefront Material">Wavefront Material</div>
+              <div class="item" data-value="Wavefront Object">Wavefront Object</div>
+              <div class="item" data-value="Web Ontology Language">Web Ontology Language</div>
+              <div class="item" data-value="WebAssembly">WebAssembly</div>
+              <div class="item" data-value="WebIDL">WebIDL</div>
+              <div class="item" data-value="wisp">wisp</div>
+              <div class="item" data-value="World of Warcraft Addon Data">World of Warcraft Addon Data</div>
+              <div class="item" data-value="X10">X10</div>
+              <div class="item" data-value="xBase">xBase</div>
+              <div class="item" data-value="XC">XC</div>
+              <div class="item" data-value="XCompose">XCompose</div>
+              <div class="item" data-value="XML">XML</div>
+              <div class="item" data-value="Xojo">Xojo</div>
+              <div class="item" data-value="XPages">XPages</div>
+              <div class="item" data-value="XPM">XPM</div>
+              <div class="item" data-value="XProc">XProc</div>
+              <div class="item" data-value="XQuery">XQuery</div>
+              <div class="item" data-value="XS">XS</div>
+              <div class="item" data-value="XSLT">XSLT</div>
+              <div class="item" data-value="Xtend">Xtend</div>
+              <div class="item" data-value="Yacc">Yacc</div>
+              <div class="item" data-value="YAML">YAML</div>
+              <div class="item" data-value="YANG">YANG</div>
+              <div class="item" data-value="Zephir">Zephir</div>
+              <div class="item" data-value="Zimpl">Zimpl</div>
+              <!-- </optgroup> -->
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -47,7 +969,11 @@
   </div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/semantic_ui/dropdown.min.js"></script>
+  <script src="bower_components/semantic_ui/semantic.min.js"></script>
+  <script>
+    $('.ui.dropdown')
+      .dropdown();
+  </script>
 </body>
 
 </html>
