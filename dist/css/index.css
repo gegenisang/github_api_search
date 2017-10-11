@@ -1,6 +1,40 @@
 * {
-  box-sizing: border-box;
-  outline: 1px solid #bbb; }
+  box-sizing: border-box; }
 
 #box {
   background-color: #e6f3ff; }
+
+.search-box {
+  margin-top: 50px;
+  min-height: 50px;
+  background-color: #24292e;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px; }
+  .search-box .icon {
+    float: left;
+    position: relative;
+    margin-left: 20px; }
+    .search-box .icon .fa-github {
+      color: #fff;
+      display: inline-block;
+      font-size: 30px;
+      padding: 10px; }
+  .search-box .form-search {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 7px; }
+    .search-box .form-search input {
+      min-width: 250px;
+      min-height: 30px;
+      background-color: #404448;
+      border: 1px solid #d1d5da;
+      vertical-align: middle;
+      line-height: 20px;
+      padding: 6px 8px;
+      color: #fff;
+      outline: none;
+      box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+      font-size: 14px;
+      border-radius: 3px; }
