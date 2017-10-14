@@ -34,7 +34,7 @@ $(document).ready(function () {
         console.log(data.items);
         // dataSet.push(data.items);
         for (var i = 0; i < data.items.length; i++) {
-          $(".list").append("<li class='item clearfix'><div class='pull-left'><h2><a href='javascript:;'>" + data.items[i].full_name + "</a></h2><p class='description'>" + data.items[i].description + "</p><p class='time'>" + "updata : " + data.items[i].updated_at + "</p></div>" + "<div class='pull-right'><span class='download'><button type='button'><i class='fa fa-cloud-download'></i>Download</button></span><span><i class='fa fa-star'></i><em class='numbers'>" + data.items[i].stargazers_count + "</em></span></div></li>");
+          $(".list").append("<li class='item clearfix'><div class='pull-left'><h2><a href='javascript:;'>" + data.items[i].full_name + "</a></h2><p class='description'>" + data.items[i].description + "</p><p class='time'>" + "updata : " + data.items[i].updated_at + "</p></div>" + "<div class='pull-right'><span class='download'><a href=" + data.items[i].url + "/zipball/master" + "><i class='fa fa-cloud-download'></i>Download</a></span><span><i class='fa fa-star'></i><em class='numbers'>" + data.items[i].stargazers_count + "</em></span></div></li>");
         }
 
       },
