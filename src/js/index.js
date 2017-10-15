@@ -75,7 +75,7 @@ $(document).ready(function () {
 
 
   function filterSearch(searchValue) {
-    $(".list .item").each(function () {
+    $(".list .item h2 a").each(function () {
       if ($(this).text().search(new RegExp(searchValue, "i")) > -1) {
         $(this).parents("li").show();
       } else {
@@ -85,11 +85,13 @@ $(document).ready(function () {
   }
 
   function getSearchValue() {
-    var search = $(".search_text input").val();
+    var search = $("#search-input").val();
     return search;
   }
   $("#search-input").keyup(function () {
+    console.log('wahahah');
     var $input_value = getSearchValue();
+    console.log($input_value);
     filterSearch($input_value);
-  })
+  });
 });
