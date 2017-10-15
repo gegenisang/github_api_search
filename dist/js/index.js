@@ -77,11 +77,13 @@ $(document).ready(function () {
   function filterSearch(searchValue) {
     $(".list .item h2 a").each(function () {
       if ($(this).text().search(new RegExp(searchValue, "i")) > -1) {
+
         $(this).parents("li").show();
+        $("this:contains('" + searchValue + "')").css("color", "white");
       } else {
         $(this).parents("li").hide();
       }
-    })
+    });
   }
 
   function getSearchValue() {
@@ -94,4 +96,15 @@ $(document).ready(function () {
     console.log($input_value);
     filterSearch($input_value);
   });
+
+  // var mark = function () {
+  //   var $keyword = $("#search-input").val();
+  //   $(".list").unmark({
+  //     done: function () {
+  //       $(".list").mark(keyword);
+  //     }
+  //   });
+  // };
+
+  // $("#search-input").on("input", mark);
 });
