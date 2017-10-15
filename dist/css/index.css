@@ -60,6 +60,15 @@ a {
       padding: 20px; }
       .result-content .list li .pull-left {
         max-width: 50%; }
+        .result-content .list li .pull-left h2 a {
+          font-size: 23px;
+          color: #666; }
+        .result-content .list li .pull-left .description {
+          font-size: 16px;
+          color: #999; }
+        .result-content .list li .pull-left .time {
+          font-size: 11px;
+          color: #999; }
       .result-content .list li .pull-right {
         display: table;
         width: 40%; }
@@ -67,6 +76,17 @@ a {
           display: table-cell;
           align-items: center;
           justify-content: center; }
+          .result-content .list li .pull-right span.download a {
+            color: #fff;
+            padding: 5px 10px;
+            background-color: #e25a2b;
+            border: 1px solid #e25a2b;
+            border-radius: 3px; }
+            .result-content .list li .pull-right span.download a i {
+              margin-right: 10px; }
+            .result-content .list li .pull-right span.download a:hover {
+              background-color: #fb7445;
+              border-color: #fb7445; }
 
 @media (min-width: 1200px) {
   .ui.fluid.dropdown {

@@ -70,6 +70,20 @@ a {
       padding: 20px;
       .pull-left {
         max-width: 50%;
+        h2 {
+          a {
+            font-size: 23px;
+            color: #666;
+          }
+        }
+        .description {
+          font-size: 16px;
+          color: #999;
+        }
+        .time {
+          font-size: 11px;
+          color: #999;
+        }
       }
       .pull-right {
         display: table;
@@ -78,6 +92,22 @@ a {
           display: table-cell;
           align-items: center;
           justify-content: center;
+          &.download {
+            a {
+              color: #fff;
+              padding: 5px 10px;
+              background-color: #e25a2b;
+              border: 1px solid #e25a2b;
+              border-radius: 3px;
+              i {
+                margin-right: 10px;
+              }
+              &:hover {
+                background-color: #fb7445;
+                border-color: #fb7445;
+              }
+            }
+          }
         }
       }
     }
