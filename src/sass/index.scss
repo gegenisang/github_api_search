@@ -1,6 +1,5 @@
 * {
-  box-sizing: border-box;
-  outline: 1px solid #bbb;
+  box-sizing: border-box; // outline: 1px solid #bbb;
 }
 
 div,
@@ -40,6 +39,21 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
+  .form-box {
+    display: inline-block;
+    margin-left: 40px;
+    min-width: 200px;
+    #search-form {
+      width: 100%;
+      margin-top: 6px;
+      input {
+        border: 1px solid #e8e8e8;
+        height: 34px;
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
   .icon {
     float: left;
     position: relative;
@@ -50,6 +64,12 @@ a {
       font-size: 30px;
       padding: 10px;
     }
+  }
+  #filterbox {
+    margin-top: 6px;
+  }
+  #myDropdown {
+    margin-right: 10px;
   }
   .ui {
     margin-top: 5px;

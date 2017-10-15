@@ -1,20 +1,49 @@
 $(document).ready(function () {
   var $val;
+  var $math = "stars";
   $('#myDropdown').dropdown({
     onChange: function (value, text, $selectedItem) {
       console.log('value', value);
       console.log('text', text);
       $val = text;
-      getGitHub($val);
+      getGitHub($val, $math);
+    }
+  });
+
+  $("#filterbox").dropdown({
+    onChange: function (value, text, $selectedItem) {
+      console.log('value', value);
+      console.log('text', text);
+      $math = text;
+      switch (text) {
+        case "Most stars":
+          $math = "stars";
+          break;
+        case "Best match":
+          $math = "match";
+          break;
+        case "Most forks":
+          $math = "forks";
+          break;
+        case "Recently updated":
+          $math = "updated"
+          break;
+        default:
+          $math = "stars";
+          break;
+      }
+      console.log($math);
+      getGitHub($val, $math);
     }
   });
 
 
 
 
-  function getGitHub(res) {
+  function getGitHub(lang, sort) {
     // var baseUrl = "https://api.github.com/search/repositories?q=language:" + res + "&sort=stars&order=desc";
-    var url = "https://api.github.com/search/repositories?q=language:" + res + "&sort=stars&order=desc";
+    var url = "https://api.github.com/search/repositories?q=language:" + lang + "&sort=" + sort + "&order=desc";
+    console.log('url', url);
     // var dataSet = [];
     // for (var i = 1; i <= 2; i++) {
     //   var url = baseUrl + "&page=" + i;
@@ -34,7 +63,7 @@ $(document).ready(function () {
         console.log(data.items);
         // dataSet.push(data.items);
         for (var i = 0; i < data.items.length; i++) {
-          $(".list").append("<li class='item clearfix'><div class='pull-left'><h2><a href='javascript:;'>" + data.items[i].full_name + "</a></h2><p class='description'>" + data.items[i].description + "</p><p class='time'>" + "updata : " + data.items[i].updated_at + "</p></div>" + "<div class='pull-right'><span class='download'><a href=" + data.items[i].url + "/zipball/master" + "><i class='fa fa-cloud-download'></i>Download</a></span><span><i class='fa fa-star'></i><em class='numbers'>" + data.items[i].stargazers_count + "</em></span></div></li>");
+          $(".list").append("<li class='item clearfix'><div class='pull-left'><h2><a href='javascript:;'>" + data.items[i].full_name + "</a></h2><p class='description'>" + data.items[i].description + "</p><p class='time'>" + "updata : " + data.items[i].updated_at + "</p></div>" + "<div class='pull-right'><span class='download'><a href=" + data.items[i].url + "/zipball/master" + "><i class='fa fa-cloud-download'></i>Download</a></span><span><i class='fa fa-star'></i><em class='numbers'>" + data.items[i].stargazers_count + "</em></span><span><i class='fa fa-code-fork'></i><em class='fork'>" + data.items[i].forks_count + "</em></span></div></li>");
         }
 
       },
@@ -43,5 +72,24 @@ $(document).ready(function () {
       }
     })
   }
-  // }
+
+
+  function filterSearch(searchValue) {
+    $(".list .item").each(function () {
+      if ($(this).text().search(new RegExp(searchValue, "i")) > -1) {
+        $(this).parents("li").show();
+      } else {
+        $(this).parents("li").hide();
+      }
+    })
+  }
+
+  function getSearchValue() {
+    var search = $(".search_text input").val();
+    return search;
+  }
+  $("#search-input").keyup(function () {
+    var $input_value = getSearchValue();
+    filterSearch($input_value);
+  })
 });

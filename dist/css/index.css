@@ -1,6 +1,5 @@
 * {
-  box-sizing: border-box;
-  outline: 1px solid #bbb; }
+  box-sizing: border-box; }
 
 div,
 h1,
@@ -35,6 +34,18 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px; }
+  .search-box .form-box {
+    display: inline-block;
+    margin-left: 40px;
+    min-width: 200px; }
+    .search-box .form-box #search-form {
+      width: 100%;
+      margin-top: 6px; }
+      .search-box .form-box #search-form input {
+        border: 1px solid #e8e8e8;
+        height: 34px;
+        padding-left: 10px;
+        border-radius: 5px; }
   .search-box .icon {
     float: left;
     position: relative;
@@ -44,6 +55,10 @@ a {
       display: inline-block;
       font-size: 30px;
       padding: 10px; }
+  .search-box #filterbox {
+    margin-top: 6px; }
+  .search-box #myDropdown {
+    margin-right: 10px; }
   .search-box .ui {
     margin-top: 5px; }
   .search-box .ui.fluid.dropdown {
