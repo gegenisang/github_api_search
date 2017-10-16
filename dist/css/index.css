@@ -106,6 +106,15 @@ a {
             .result-content .list li .pull-right span.download a:hover {
               background-color: #fb7445;
               border-color: #fb7445; }
+  .result-content .page-list {
+    display: flex; }
+    .result-content .page-list a {
+      justify-content: space-between;
+      display: block;
+      align-items: center;
+      color: #999;
+      font-size: 20px;
+      text-align: center; }
 
 .highlight {
   background-color: #ff6;

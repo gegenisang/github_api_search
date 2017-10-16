@@ -139,6 +139,17 @@ a {
       }
     }
   }
+  .page-list {
+    display: flex;
+    a {
+      justify-content: space-between;
+      display: block;
+      align-items: center;
+      color: #999;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
 }
 
 .highlight {
