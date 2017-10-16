@@ -7,13 +7,19 @@ $(document).ready(function () {
       console.log('value', value);
       console.log('text', text);
       $val = text;
-      if (num > 1) {
-        num = 1;
-      }
+      showActive();
       getGitHub($val, $math, num);
     }
   });
 
+  function showActive() {
+    if (num > 1) {
+      num = 1;
+      $(".pagination li").removeClass("active");
+      $("*[data-value='1']").parent("li").addClass("active");
+
+    }
+  }
   $("#filterbox").dropdown({
     onChange: function (value, text, $selectedItem) {
       console.log('value', value);
@@ -36,10 +42,8 @@ $(document).ready(function () {
           $math = "stars";
           break;
       }
+      showActive();
       console.log($math);
-      if (num > 1) {
-        num = 1;
-      }
       getGitHub($val, $math, num);
     }
   });
