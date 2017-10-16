@@ -23,6 +23,8 @@
             <a href="javascript" class="icon">
               <i class="fa fa-github" aria-hidden="true"></i>
             </a>
+          </div>
+          <div class="search-content">
             <div class="ui search dropdown selection" id="myDropdown">
               <select>
                 <option value=''>Search GitHub</option>
@@ -956,21 +958,20 @@
                 <!-- </optgroup> -->
               </div>
             </div>
-
-          </div>
-          <span class="form-box">
-            <form id="search-form">
-              <input type="text" placeholder="Search description..." id="search-input">
-            </form>
-          </span>
-          <div class="ui floating dropdown labeled icon button pull-right" id="filterbox">
-            <i class="filter icon"></i>
-            <span class="text">Most stars</span>
-            <div class="menu transition hidden" tabindex="-1">
-              <div class="item active selected">Most stars</div>
-              <div class="item">Best match</div>
-              <div class="item">Most forks</div>
-              <div class="item">Recently updated</div>
+            <span class="form-box">
+              <form id="search-form">
+                <input type="text" placeholder="Search description..." id="search-input">
+              </form>
+            </span>
+            <div class="ui floating dropdown labeled icon button pull-right" id="filterbox">
+              <i class="filter icon"></i>
+              <span class="text">Most stars</span>
+              <div class="menu transition hidden" tabindex="-1">
+                <div class="item active selected">Most stars</div>
+                <div class="item">Best match</div>
+                <div class="item">Most forks</div>
+                <div class="item">Recently updated</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1010,6 +1011,7 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/semantic_ui/semantic.min.js"></script>
+  <script src="bower_components/jquery.highlight.js"></script>
   <script src="js/index.js"></script>
   <script>
   </script>

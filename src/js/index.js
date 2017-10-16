@@ -74,14 +74,27 @@ $(document).ready(function () {
   }
 
 
-  function filterSearch(searchValue) {
-    $(".list .item h2 a").each(function () {
+  function filterSearch(ele, searchValue) {
+    $(ele).each(function () {
       if ($(this).text().search(new RegExp(searchValue, "i")) > -1) {
 
         $(this).parents("li").show();
-        $("this:contains('" + searchValue + "')").css("color", "white");
+        // $("this:contains('" + searchValue + "')").css("color", "yellow");
+        console.log('searchValue', searchValue);
+        console.log($("#search-input").val());
+        // $(".highlight").remove()
+        $(ele).unhighlight({
+          element: "em",
+          className: "highlight"
+        });
+
+        $(ele).highlight($("#search-input").val(), {
+          element: "em",
+          className: "highlight"
+        });
       } else {
         $(this).parents("li").hide();
+
       }
     });
   }
@@ -91,20 +104,18 @@ $(document).ready(function () {
     return search;
   }
   $("#search-input").keyup(function () {
-    console.log('wahahah');
     var $input_value = getSearchValue();
     console.log($input_value);
-    filterSearch($input_value);
+    filterSearch($("item h2 a"), $input_value);
+    filterSearch($(".item .description"), $input_value);
   });
 
-  // var mark = function () {
-  //   var $keyword = $("#search-input").val();
-  //   $(".list").unmark({
-  //     done: function () {
-  //       $(".list").mark(keyword);
-  //     }
+  // $("#search-input").on("keyup", function () {
+  //   $(".item").highlight($(this).val(), {
+  //     element: 'span',
+  //     className: 'highlight'
   //   });
-  // };
 
-  // $("#search-input").on("input", mark);
+  // })
+
 });

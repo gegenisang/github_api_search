@@ -41,14 +41,16 @@ a {
   border-radius: 4px;
   .form-box {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 60px;
     min-width: 200px;
     #search-form {
       width: 100%;
       margin-top: 6px;
       input {
+        width: 100%;
         border: 1px solid #e8e8e8;
         height: 34px;
+        outline: none;
         padding-left: 10px;
         border-radius: 5px;
       }
@@ -86,8 +88,13 @@ a {
   .list {
     width: 100%;
     li {
-      background-color: #95CFE0;
+      // background-color: #95CFE0;
+      // background-color: #77dbf1;
+      background-color: #bde9f2;
       padding: 20px;
+      &:hover {
+        background-color: #a8dee9;
+      }
       .pull-left {
         max-width: 50%;
         h2 {
@@ -132,6 +139,12 @@ a {
       }
     }
   }
+}
+
+.highlight {
+  background-color: #ff6;
+  font-weight: bold;
+  font-style: normal;
 }
 
 @media (min-width:1200px) {
