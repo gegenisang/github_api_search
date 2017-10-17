@@ -77,6 +77,7 @@ $(document).ready(function () {
         for (var i = 0; i < data.items.length; i++) {
           $(".list").append("<li class='item clearfix'><div class='pull-left'><h2><a href='javascript:;'>" + data.items[i].full_name + "</a></h2><p class='description'>" + data.items[i].description + "</p><p class='time'>" + "updata : " + data.items[i].updated_at + "</p></div>" + "<div class='pull-right'><span class='download'><a href=" + data.items[i].url + "/zipball/master" + "><i class='fa fa-cloud-download'></i>Download</a></span><span><i class='fa fa-star'></i><em class='numbers'>" + data.items[i].stargazers_count + "</em></span><span><i class='fa fa-code-fork'></i><em class='fork'>" + data.items[i].forks_count + "</em></span></div></li>");
         }
+        getSearchMess();
         $(".page-list").removeClass("hidden");
 
       },
@@ -94,10 +95,6 @@ $(document).ready(function () {
       if ($(this).text().search(new RegExp(searchValue, "i")) > -1) {
 
         $(this).parents("li").show();
-        // $("this:contains('" + searchValue + "')").css("color", "yellow");
-        console.log('searchValue', searchValue);
-        console.log($("#search-input").val());
-        // $(".highlight").remove()
         $(ele).unhighlight({
           element: "em",
           className: "highlight"
@@ -118,11 +115,15 @@ $(document).ready(function () {
     var search = $("#search-input").val();
     return search;
   }
-  $("#search-input").keyup(function () {
+
+  function getSearchMess() {
     var $input_value = getSearchValue();
     console.log($input_value);
     filterSearch($("item h2 a"), $input_value);
     filterSearch($(".item .description"), $input_value);
+  }
+  $("#search-input").keyup(function () {
+    getSearchMess();
   });
 
   // $("#search-input").on("keyup", function () {
