@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search Code</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/code_search.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/semantic_ui/semantic.min.css">
+
+</head>
+
+<body>
+  <div class="box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form class="search-box">
+            <input type="text" placeholder="code">
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="filter">
+            <div class="ui floating dropdown labeled icon button pull-right" id="filterbox">
+              <i class="filter icon"></i>
+              <span class="text">Most stars</span>
+              <div class="menu transition hidden" tabindex="-1">
+                <div class="item active selected">Most stars</div>
+                <div class="item">Best match</div>
+                <div class="item">Most forks</div>
+                <div class="item">Recently updated</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/semantic_ui/semantic.min.js"></script>
+  <!--      -->
+  <script>
+    $("#filterbox").dropdown();
+  </script>
+</body>
+
+</html>
